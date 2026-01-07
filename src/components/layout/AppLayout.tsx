@@ -31,24 +31,8 @@ export function AppLayout() {
             </span>
           </div>
 
-          {/* Desktop Nav */}
-          <nav className="hidden md:flex items-center gap-1">
-            {navItems.map((item) => (
-              <NavLink
-                key={item.path}
-                to={item.path}
-                end={item.path === "/"}
-                className={cn(
-                  "flex items-center gap-2 px-4 py-2 rounded-lg transition-all duration-200",
-                  "text-muted-foreground hover:text-foreground hover:bg-navy-lighter"
-                )}
-                activeClassName="gradient-primary text-white"
-              >
-                <item.icon className="w-4 h-4" />
-                <span className="font-medium">{item.label}</span>
-              </NavLink>
-            ))}
-          </nav>
+          {/* Spacer for centered logo */}
+          <div className="hidden md:block" />
 
           {/* Right actions */}
           <div className="flex items-center gap-2">
@@ -116,7 +100,7 @@ export function AppLayout() {
       </header>
 
       {/* Main content */}
-      <main className="pt-16 pb-24 md:pb-8">
+      <main className="pt-16 pb-24">
         <AnimatePresence mode="wait">
           <motion.div
             key={location.pathname}
@@ -130,8 +114,8 @@ export function AppLayout() {
         </AnimatePresence>
       </main>
 
-      {/* Mobile bottom nav */}
-      <nav className="fixed bottom-0 left-0 right-0 md:hidden glass-card border-t border-border z-50">
+      {/* Bottom nav - always visible */}
+      <nav className="fixed bottom-0 left-0 right-0 glass-card border-t border-border z-50">
         <div className="flex items-center justify-around py-2">
           {navItems.map((item) => (
             <NavLink
