@@ -9,78 +9,78 @@
 @layer base {
   :root,
   .light {
-    /* Light mode - Clean, modern, bright */
-    --background: 210 40% 98%;
-    --foreground: 222 47% 11%;
+    /* Light mode - Soft, minimal, easy on eyes (dipstick.io inspired) */
+    --background: 220 20% 97%;
+    --foreground: 220 25% 25%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222 47% 11%;
+    --card-foreground: 220 25% 20%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222 47% 11%;
+    --popover-foreground: 220 25% 20%;
 
-    /* Brand colors */
-    --primary: 199 89% 48%;
+    /* Brand colors - Softer, muted tones */
+    --primary: 210 70% 50%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 258 90% 66%;
+    --secondary: 250 45% 60%;
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 210 40% 96%;
-    --muted-foreground: 215 16% 47%;
+    --muted: 220 15% 94%;
+    --muted-foreground: 220 15% 45%;
 
-    --accent: 258 90% 66%;
+    --accent: 250 45% 60%;
     --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 84% 60%;
+    --destructive: 0 65% 55%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 214 32% 91%;
-    --input: 214 32% 91%;
-    --ring: 199 89% 48%;
+    --border: 220 15% 90%;
+    --input: 220 15% 90%;
+    --ring: 210 70% 50%;
 
     --radius: 0.75rem;
 
-    /* Extended palette - Light mode */
-    --navy: 222 47% 11%;
-    --navy-light: 210 40% 96%;
-    --navy-lighter: 210 40% 92%;
+    /* Extended palette - Light mode (soft tones) */
+    --navy: 220 25% 25%;
+    --navy-light: 220 15% 94%;
+    --navy-lighter: 220 15% 90%;
     
-    --cyan: 199 89% 48%;
-    --purple: 258 90% 66%;
-    --green: 142 71% 45%;
-    --orange: 32 95% 55%;
-    --red: 0 84% 60%;
+    --cyan: 210 70% 50%;
+    --purple: 250 45% 60%;
+    --green: 150 50% 42%;
+    --orange: 30 75% 50%;
+    --red: 0 65% 55%;
 
-    /* Status colors */
-    --success: 142 71% 45%;
+    /* Status colors - Softer */
+    --success: 150 50% 42%;
     --success-foreground: 0 0% 100%;
-    --warning: 32 95% 55%;
+    --warning: 35 80% 50%;
     --warning-foreground: 0 0% 100%;
-    --info: 199 89% 48%;
+    --info: 210 70% 50%;
     --info-foreground: 0 0% 100%;
 
-    /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(199 89% 48%) 0%, hsl(258 90% 66%) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(210 40% 98%) 100%);
-    --gradient-glow: radial-gradient(ellipse at center, hsl(199 89% 48% / 0.08) 0%, transparent 70%);
+    /* Gradients - Subtle and soft */
+    --gradient-primary: linear-gradient(135deg, hsl(210 70% 50%) 0%, hsl(250 45% 60%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(220 20% 98%) 100%);
+    --gradient-glow: radial-gradient(ellipse at center, hsl(210 70% 50% / 0.05) 0%, transparent 70%);
 
-    /* Shadows - Light mode */
-    --shadow-sm: 0 2px 8px -2px hsl(222 47% 11% / 0.08);
-    --shadow-md: 0 4px 16px -4px hsl(222 47% 11% / 0.1);
-    --shadow-lg: 0 8px 32px -8px hsl(222 47% 11% / 0.12);
-    --shadow-glow: 0 0 40px -10px hsl(199 89% 48% / 0.15);
-    --shadow-card: 0 4px 24px -8px hsl(222 47% 11% / 0.08);
+    /* Shadows - Very subtle, soft */
+    --shadow-sm: 0 1px 3px 0 hsl(220 25% 25% / 0.04);
+    --shadow-md: 0 4px 12px -2px hsl(220 25% 25% / 0.06);
+    --shadow-lg: 0 8px 24px -4px hsl(220 25% 25% / 0.08);
+    --shadow-glow: 0 0 30px -8px hsl(210 70% 50% / 0.1);
+    --shadow-card: 0 2px 12px -3px hsl(220 25% 25% / 0.05);
 
-    /* Sidebar */
+    /* Sidebar - Clean white */
     --sidebar-background: 0 0% 100%;
-    --sidebar-foreground: 222 47% 11%;
-    --sidebar-primary: 199 89% 48%;
+    --sidebar-foreground: 220 25% 25%;
+    --sidebar-primary: 210 70% 50%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 210 40% 96%;
-    --sidebar-accent-foreground: 222 47% 11%;
-    --sidebar-border: 214 32% 91%;
-    --sidebar-ring: 199 89% 48%;
+    --sidebar-accent: 220 15% 94%;
+    --sidebar-accent-foreground: 220 25% 25%;
+    --sidebar-border: 220 15% 90%;
+    --sidebar-ring: 210 70% 50%;
   }
 
   .dark {
