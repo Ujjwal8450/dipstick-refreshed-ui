@@ -3,6 +3,7 @@ import { Outlet, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { Home, FileText, BookOpen, HelpCircle, Bell, User, Menu, X } from "lucide-react";
 import { NavLink } from "@/components/NavLink";
+import { ThemeToggle } from "@/components/ui/ThemeToggle";
 import { cn } from "@/lib/utils";
 
 const navItems = [
@@ -35,12 +36,13 @@ export function AppLayout() {
           <div className="hidden md:block" />
 
           {/* Right actions */}
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-1.5">
+            <ThemeToggle />
             <NavLink
               to="/notifications"
               className={cn(
                 "p-2 rounded-lg transition-all duration-200",
-                "text-muted-foreground hover:text-foreground hover:bg-navy-lighter"
+                "text-muted-foreground hover:text-foreground hover:bg-muted"
               )}
               activeClassName="gradient-primary text-white"
             >
@@ -50,7 +52,7 @@ export function AppLayout() {
               to="/profile"
               className={cn(
                 "p-2 rounded-lg transition-all duration-200",
-                "text-muted-foreground hover:text-foreground hover:bg-navy-lighter"
+                "text-muted-foreground hover:text-foreground hover:bg-muted"
               )}
               activeClassName="gradient-primary text-white"
             >
@@ -60,7 +62,7 @@ export function AppLayout() {
             {/* Mobile menu button */}
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="md:hidden p-2 rounded-lg text-muted-foreground hover:text-foreground hover:bg-navy-lighter"
+              className="md:hidden p-2 rounded-lg text-muted-foreground hover:text-foreground hover:bg-muted"
             >
               {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
             </button>
@@ -85,7 +87,7 @@ export function AppLayout() {
                     onClick={() => setMobileMenuOpen(false)}
                     className={cn(
                       "flex items-center gap-3 px-4 py-3 rounded-lg transition-all duration-200",
-                      "text-muted-foreground hover:text-foreground hover:bg-navy-lighter"
+                      "text-muted-foreground hover:text-foreground hover:bg-muted"
                     )}
                     activeClassName="gradient-primary text-white"
                   >
