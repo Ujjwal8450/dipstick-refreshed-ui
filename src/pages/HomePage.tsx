@@ -167,7 +167,7 @@ export default function HomePage() {
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: 0.4 + index * 0.1 }}
                   onClick={() => navigate(`/content/${course.id}`)}
-                  className="p-4 rounded-xl bg-muted hover:bg-muted/80 cursor-pointer transition-all duration-200 border border-border/50"
+                  className="p-4 rounded-xl bg-card hover:bg-muted/40 cursor-pointer transition-all duration-200 border border-border/50"
                 >
                   <div className="flex items-start gap-3">
                     <div className="text-2xl">{course.icon}</div>

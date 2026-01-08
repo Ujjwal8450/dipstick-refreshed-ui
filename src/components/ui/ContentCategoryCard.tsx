@@ -27,10 +27,9 @@ export function ContentCategoryCard({
       whileHover={{ scale: 1.02 }}
       onClick={onClick}
       className={cn(
-        "group relative overflow-hidden rounded-2xl border border-border",
-        "bg-gradient-to-br from-navy-light to-navy p-6",
+        "group relative overflow-hidden rounded-2xl border border-border bg-card p-6 shadow-card",
         "cursor-pointer transition-all duration-300",
-        "hover:border-primary/50 hover:shadow-glow"
+        "hover:border-primary/50 hover:shadow-glow hover:bg-muted/40"
       )}
     >
       <div className="flex items-start justify-between">

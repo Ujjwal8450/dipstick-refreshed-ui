@@ -48,7 +48,7 @@ export function ReportScoreCard({ testId, score, onClick, delay = 0 }: ReportSco
       </div>
       
       {/* Progress bar at bottom */}
-      <div className="absolute bottom-0 left-0 right-0 h-1 bg-navy">
+      <div className="absolute bottom-0 left-0 right-0 h-1 bg-muted">
         <motion.div
           initial={{ width: 0 }}
           animate={{ width: `${score}%` }}
