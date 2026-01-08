@@ -110,7 +110,7 @@ export default function HelpPage() {
               <AccordionItem
                 key={index}
                 value={`faq-${index}`}
-                className="border border-border rounded-xl bg-navy px-4 data-[state=open]:border-primary/30"
+                className="border border-border rounded-xl bg-card px-4 data-[state=open]:border-primary/30"
               >
                 <AccordionTrigger className="text-left text-foreground hover:text-primary hover:no-underline py-4">
                   {faq.question}

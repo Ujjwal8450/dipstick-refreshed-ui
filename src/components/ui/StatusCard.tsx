@@ -11,19 +11,19 @@ interface StatusCardProps {
 }
 
 const variantStyles = {
-  default: "from-navy-light to-navy border-border",
-  success: "from-emerald-500/20 to-emerald-600/10 border-emerald-500/30",
-  warning: "from-amber-500/20 to-amber-600/10 border-amber-500/30",
-  info: "from-cyan-500/20 to-cyan-600/10 border-cyan-500/30",
-  accent: "from-purple-500/20 to-purple-600/10 border-purple-500/30",
+  default: "dark:from-navy-light dark:to-navy",
+  success: "dark:border-success/30 dark:from-success/20 dark:to-success/5",
+  warning: "dark:border-warning/30 dark:from-warning/20 dark:to-warning/5",
+  info: "dark:border-info/30 dark:from-info/20 dark:to-info/5",
+  accent: "dark:border-accent/30 dark:from-accent/20 dark:to-accent/5",
 };
 
 const iconStyles = {
-  default: "bg-navy-lighter text-muted-foreground",
-  success: "bg-emerald-500/20 text-emerald-400",
-  warning: "bg-amber-500/20 text-amber-400",
-  info: "bg-cyan-500/20 text-cyan-400",
-  accent: "bg-purple-500/20 text-purple-400",
+  default: "bg-muted text-muted-foreground",
+  success: "bg-success/10 text-success",
+  warning: "bg-warning/10 text-warning",
+  info: "bg-info/10 text-info",
+  accent: "bg-accent/10 text-accent",
 };
 
 export function StatusCard({ title, value, icon: Icon, variant = "default", delay = 0 }: StatusCardProps) {
@@ -33,8 +33,8 @@ export function StatusCard({ title, value, icon: Icon, variant = "default", dela
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.4, delay }}
       className={cn(
-        "relative overflow-hidden rounded-2xl border p-5",
-        "bg-gradient-to-br",
+        "relative overflow-hidden rounded-2xl border border-border p-5 bg-card shadow-card",
+        "dark:bg-gradient-to-br",
         variantStyles[variant]
       )}
     >

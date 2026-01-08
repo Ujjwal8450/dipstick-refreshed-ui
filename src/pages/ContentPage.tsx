@@ -92,7 +92,7 @@ export default function ContentPage() {
                 <div className="flex-1 min-w-0">
                   <p className="font-medium text-foreground truncate">{item.title}</p>
                   <div className="flex items-center gap-2 mt-1">
-                    <div className="flex-1 h-1.5 rounded-full bg-navy overflow-hidden">
+                    <div className="flex-1 h-1.5 rounded-full bg-muted overflow-hidden">
                       <motion.div
                         initial={{ width: 0 }}
                         animate={{ width: `${item.progress}%` }}
